@@ -79,5 +79,5 @@ if [[ "$(grep 'ssi: enabled' Staticfile)X" != "X" ]]; then
   status "Enabling ssi"
   touch nginx/conf/.enable_ssi
 fi
-
+echo "helloworld from the compile script"
 cp $compile_buildpack_bin/boot.sh .
